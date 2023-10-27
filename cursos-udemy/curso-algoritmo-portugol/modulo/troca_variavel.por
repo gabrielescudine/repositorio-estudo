@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro a, b, aux
+		inteiro a, b, c
 
 		escreva("Indique um número para a variável A: ")
 		leia(a)
@@ -14,9 +14,9 @@ programa
 		escreva("Variável antes da troca: \n")
 		escreva("A = ", a + " B = ", b)
 
-		aux = a
+		c = a
 		a = b
-		b = aux
+		b = c
 
 		escreva("\nVariável depois da troca: \n")
 		escreva("A = ", a + " B = ", b)
@@ -27,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 301; 
+ * @POSICAO-CURSOR = 273; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
