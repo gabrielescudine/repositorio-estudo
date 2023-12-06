@@ -99,6 +99,27 @@ form h2{
     font-size:1.1em;
 }
 
+/* Checkbox personalizado(também serve para Radio) */
+
+/* input[type=checkbox]{
+    display:none;
+}
+
+label.teste{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-color:#069;
+}
+
+input[type=checkbox]:checked label.teste{
+    background-image:url("../img/danki_bg.jpg");
+    background-image: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color:red;
+} */
+
 input[type="submit"]{
     margin:30px 0;
     padding: 2% 8%;
