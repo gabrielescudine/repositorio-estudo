@@ -1,0 +1,98 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height:100%;
+}
+
+.box{
+    position: relative;
+    width:300px;
+    height:300px;
+    background-color:red;
+    margin:0 auto 5% auto;
+}
+
+#box1{
+    animation-name:exemplo1;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exemplo1{
+    from{
+        background-color:red;
+    }
+
+    to{
+        background-color:aqua;
+    }
+}
+
+#box2{
+    animation-name:exemplo2;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exemplo2{
+    0%{
+        background-color:red;
+        left:0;
+    }
+
+    25%{
+        background-color:aqua;
+        left: 200px;
+    }
+
+    50%{
+        background-color:beige;
+        left: 200px;
+        top:200px;
+    }
+
+    75%{
+        background-color:beige;
+        left: 0;
+        top:200px;
+    }
+
+    100%{
+        background-color:red;
+        left:0;
+        top:0;
+    }
+}
+
+#box3{
+    animation-name:exemplo3;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exemplo3{
+    0%{
+        background-color:red;
+        right:0;
+    }
+
+    25%{
+        background-color:purple;
+        right: 25px;
+    }
+
+    50%{
+        background-color:violet;
+        right: 50px;
+    }
+
+    100%{
+        background-color:red;
+        right:0;
+    }
+}

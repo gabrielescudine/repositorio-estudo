@@ -127,7 +127,6 @@ input[type="text"],input[type="email"],input[type="password"]:focus{
     width:100%;
     max-width: 200px;
     color:white;
-    margin-left:4px;
     padding:2% 10%;
     border-radius: 5px;
     border:1px solid #75b85c;
@@ -143,12 +142,10 @@ input[type="text"],input[type="email"],input[type="password"]:focus{
 
 .w-100 h3{
     margin: 10px 0 5px 0;
-    font-variant: small-caps;
 }
 
 .w-100 select.nascimento{
     float:left;
-    height:35px;
     padding:2%;
     margin-bottom: 10px;
 }
@@ -198,10 +195,20 @@ input[type="text"],input[type="email"],input[type="password"]:focus{
 
 @media screen and (max-width: 768px){
 
+    header{
+        width:100%;
+        height:auto;
+        padding:2% 0;
+    }
+
     header h2{
         float:none;
         width:100%;
         text-align:center;
+    }
+
+    .form-element{
+        float:none;
     }
 
     form.form-login{
@@ -213,7 +220,16 @@ input[type="text"],input[type="email"],input[type="password"]:focus{
 
     label{
         display:block;
-        /* margin-top: 5px; */
+        margin-bottom: 5px;
+    }
+
+    .form-element input[type="submit"]{
+        color:white;
+        padding:2% 10%;
+        margin-left:0;
+        border:1px solid #273b68;
+        background-color: #4362AC;
+        cursor: pointer;
     }
 
     .form-login .form-element{
@@ -227,5 +243,9 @@ input[type="text"],input[type="email"],input[type="password"]:focus{
 
     .section-form{
         width:100%;
+    }
+
+    .section-form input[type="submit"]{
+        max-width: 100%;
     }
 }
