@@ -24,12 +24,28 @@ html,body{
 }
 
 @keyframes exemplo1{
-    from{
-        background-color:red;
+    0%{
+        background-color:green;
+        left:0;
     }
 
-    to{
-        background-color:aqua;
+    25%{
+        background-color:purple;
+        left: 300px;
+    }
+
+    50%{
+        background-color:violet;
+        left:300px;
+    }
+
+    75%{
+        left:-300px;
+    }
+
+    100%{
+        background-image:linear-gradient(75deg, 30% blue, white, green, yellow);
+        left:-300px;
     }
 }
 
@@ -42,30 +58,27 @@ html,body{
 @keyframes exemplo2{
     0%{
         background-color:red;
-        left:0;
+        right:0;
     }
 
     25%{
         background-color:aqua;
-        left: 200px;
+        right: 300px;
     }
 
     50%{
         background-color:beige;
-        left: 200px;
-        top:200px;
+        right: 300px;
     }
 
     75%{
-        background-color:beige;
-        left: 0;
-        top:200px;
+        background-color:green;
+        right:-300px;
     }
 
     100%{
-        background-color:red;
-        left:0;
-        top:0;
+        background-image:linear-gradient(75deg, red, white, blue, pink);
+        right:-300px;
     }
 }
 
@@ -78,21 +91,25 @@ html,body{
 @keyframes exemplo3{
     0%{
         background-color:red;
-        right:0;
+        left:0;
     }
 
     25%{
         background-color:purple;
-        right: 25px;
+        left: 300px;
     }
 
     50%{
         background-color:violet;
-        right: 50px;
+        left:300px;
+    }
+
+    75%{
+        left:-300px;
     }
 
     100%{
-        background-color:red;
-        right:0;
+        background-image:linear-gradient(75deg, yellow, green, yellowgreen, purple);
+        left:-300px;
     }
 }
